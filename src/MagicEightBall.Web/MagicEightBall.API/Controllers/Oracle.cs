@@ -14,7 +14,7 @@ namespace MagicEightBall.API.Controllers
             _cannedResponses.Add(
                 new OracleResponse
                 {
-                    Disposition = disposition,
+                    Disposition = disposition.ToString().ToLowerInvariant(),
                     Response = response
                 }
                 );
