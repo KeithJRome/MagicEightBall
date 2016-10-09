@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MagicEightBall.API", "MagicEightBall.API\MagicEightBall.API.csproj", "{52D585D8-33E8-42E6-BE7F-941DF32B2BAB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52D585D8-33E8-42E6-BE7F-941DF32B2BAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52D585D8-33E8-42E6-BE7F-941DF32B2BAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52D585D8-33E8-42E6-BE7F-941DF32B2BAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52D585D8-33E8-42E6-BE7F-941DF32B2BAB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
