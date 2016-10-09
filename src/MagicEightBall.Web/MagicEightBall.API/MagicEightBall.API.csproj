@@ -139,7 +139,10 @@
   <ItemGroup>
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="Controllers\ValuesController.cs" />
+    <Compile Include="Controllers\Disposition.cs" />
+    <Compile Include="Controllers\Oracle.cs" />
+    <Compile Include="Controllers\OracleController.cs" />
+    <Compile Include="Controllers\OracleResponse.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
