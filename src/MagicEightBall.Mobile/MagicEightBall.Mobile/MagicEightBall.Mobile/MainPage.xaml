@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:MagicEightBall.Mobile"
+             x:Class="MagicEightBall.Mobile.MainPage">
+
+  <StackLayout
+    Orientation="Vertical"
+    Spacing="20"
+    HorizontalOptions="Center"
+    VerticalOptions="Center">
+    
+    <Button
+      Text="Get the answer" />
+    
+    <Label
+      HorizontalTextAlignment="Center"
+      Text="This is the answer" />
+  
+  </StackLayout>
+
+</ContentPage>
