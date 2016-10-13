@@ -11,9 +11,12 @@
     VerticalOptions="Center">
     
     <Button
-      Text="Get the answer" />
+      x:Name="AskButton"
+      Text="Get the answer"
+      Clicked="GetNewAnswer"/>
     
     <Label
+      x:Name="AnswerLabel"
       HorizontalTextAlignment="Center"
       Text="This is the answer" />
   
