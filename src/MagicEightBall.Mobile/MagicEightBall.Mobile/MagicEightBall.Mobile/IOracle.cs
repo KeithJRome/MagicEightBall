@@ -17,7 +17,7 @@ namespace MagicEightBall.Mobile
         //  "Disposition": "neutral"
         //}
 
-        [Get("/api/oracle/askquestion?question={question}")]
-        Task<OracleResponse> AskQuestion(string question);
+        [Get("/api/oracle/askquestion?question={question}&forceFastFail={forceFastFail}&forceSlowFail={forceSlowFail}")]
+        Task<OracleResponse> AskQuestion(string question, bool forceFastFail = false, bool forceSlowFail = false);
     }
 }

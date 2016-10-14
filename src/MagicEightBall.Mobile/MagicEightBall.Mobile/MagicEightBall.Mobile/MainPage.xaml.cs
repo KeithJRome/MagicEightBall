@@ -16,7 +16,16 @@ namespace MagicEightBall.Mobile
             try
             {
                 var proxy = new Oracle("http://magic-8-ball-api.azurewebsites.net");
-                var response = await proxy.AskQuestion("The question really doesn't matter");
+                OracleResponse response = null;
+                try
+                {
+                    response = await proxy.AskQuestion("The question really doesn't matter");
+                }
+                catch (Exception ex)
+                {
+                    await DisplayAlert("Error", ex.Message, "OK");
+                    return;
+                }
                 AnswerLabel.Text = response.Response;
                 switch (response.Disposition)
                 {
