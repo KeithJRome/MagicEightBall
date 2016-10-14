@@ -4,13 +4,18 @@ using Xamarin.Forms;
 
 namespace MagicEightBall.Mobile
 {
-    public partial class MainPage : ContentPage
+    public partial class MainPage : ShakablePage
     {
         public MainPage()
         {
             InitializeComponent();
 
             HideAnswer();
+        }
+
+        public override void OnShake()
+        {
+            GetNewAnswer(null, EventArgs.Empty);
         }
 
         void HideAnswer()
@@ -27,7 +32,7 @@ namespace MagicEightBall.Mobile
             await Task.WhenAll(anim1, anim2);
         }
 
-        private async void GetNewAnswer(object sender, EventArgs e)
+        public async void GetNewAnswer(object sender, EventArgs e)
         {
             AskButton.IsEnabled = false;
             HideAnswer();
