@@ -24,7 +24,7 @@
         <ColumnDefinition Width="125"/>
       </Grid.ColumnDefinitions>
       <Image Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" Source="ball.png" Grid.ColumnSpan="3" />
-      <Image Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" Source="center-die.png" Grid.ColumnSpan="3" />
+      <Image Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" Source="center-die.png" Grid.ColumnSpan="3" x:Name="CenterDie" />
       <Label x:Name="AnswerLabel" TextColor="White" Text="Concentrate and ask again"
               FontSize="13" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
               LineBreakMode="WordWrap" Grid.Column="1"/>

@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading.Tasks;
 using Xamarin.Forms;
 
 namespace MagicEightBall.Mobile
@@ -8,11 +9,28 @@ namespace MagicEightBall.Mobile
         public MainPage()
         {
             InitializeComponent();
+
+            HideAnswer();
+        }
+
+        void HideAnswer()
+        {
+            CenterDie.Opacity = 0;
+            AnswerLabel.Opacity = 0;
+        }
+
+        async Task ShowAnswer()
+        {
+            var anim1 = CenterDie.FadeTo(1, 750, Easing.CubicOut);
+            var anim2 = AnswerLabel.FadeTo(1, 750, Easing.CubicOut);
+
+            await Task.WhenAll(anim1, anim2);
         }
 
         private async void GetNewAnswer(object sender, EventArgs e)
         {
             AskButton.IsEnabled = false;
+            HideAnswer();
             try
             {
                 var proxy = new Oracle("http://magic-8-ball-api.azurewebsites.net");
@@ -39,6 +57,7 @@ namespace MagicEightBall.Mobile
                         AnswerLabel.TextColor = Color.Lime;
                         break;
                 }
+                await ShowAnswer();
             }
             finally
             {
