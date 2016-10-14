@@ -21,16 +21,17 @@ namespace MagicEightBall.Mobile
                 switch (response.Disposition)
                 {
                     case "negative":
-                        AnswerLabel.TextColor = Color.Red;
+                        AnswerLabel.TextColor = Color.Pink;
                         break;
                     case "neutral":
-                        AnswerLabel.TextColor = Color.Black;
+                        AnswerLabel.TextColor = Color.White;
                         break;
                     case "positive":
-                        AnswerLabel.TextColor = Color.Blue;
+                        AnswerLabel.TextColor = Color.Lime;
                         break;
                 }
-            } finally
+            }
+            finally
             {
                 AskButton.IsEnabled = true;
             }

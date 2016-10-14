@@ -4,22 +4,32 @@
              xmlns:local="clr-namespace:MagicEightBall.Mobile"
              x:Class="MagicEightBall.Mobile.MainPage">
 
-  <StackLayout
-    Orientation="Vertical"
-    Spacing="20"
-    HorizontalOptions="Center"
-    VerticalOptions="Center">
-    
-    <Button
-      x:Name="AskButton"
-      Text="Get the answer"
-      Clicked="GetNewAnswer"/>
-    
-    <Label
-      x:Name="AnswerLabel"
-      HorizontalTextAlignment="Center"
-      Text="This is the answer" />
-  
-  </StackLayout>
+  <Grid>
+    <Image Aspect="AspectFill" HorizontalOptions="Fill" VerticalOptions="Fill" Source="mahogony.png" />
+    <Grid>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="467"/>
+        <ColumnDefinition Width="*"/>
+      </Grid.ColumnDefinitions>
+      <Image Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" Source="shadow.png" Grid.Column="1" />
+    </Grid>
+    <Grid x:Name="AskButton" HorizontalOptions="Center" VerticalOptions="Center">
+      <Grid.GestureRecognizers>
+        <TapGestureRecognizer Tapped="GetNewAnswer"/>
+      </Grid.GestureRecognizers>
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="125"/>
+        <ColumnDefinition Width="50"/>
+        <ColumnDefinition Width="125"/>
+      </Grid.ColumnDefinitions>
+      <Image Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" Source="ball.png" Grid.ColumnSpan="3" />
+      <Image Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" Source="center-die.png" Grid.ColumnSpan="3" />
+      <Label x:Name="AnswerLabel" TextColor="White" Text="Concentrate and ask again"
+              FontSize="13" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+              LineBreakMode="WordWrap" Grid.Column="1"/>
+      <Image Aspect="AspectFit" HorizontalOptions="Center" VerticalOptions="Center" Source="clouding.png" Grid.ColumnSpan="3" />
+    </Grid>
+  </Grid>
 
 </ContentPage>
