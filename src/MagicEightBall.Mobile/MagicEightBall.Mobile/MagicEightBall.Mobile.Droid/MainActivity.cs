@@ -10,7 +10,7 @@ using Android.Hardware;
 
 namespace MagicEightBall.Mobile.Droid
 {
-    [Activity(Label = "MagicEightBall.Mobile", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "Magic 8-Ball", Icon = "@drawable/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity, ISensorEventListener
     {
         SensorListener _sensorEvents;

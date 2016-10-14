@@ -23,7 +23,7 @@
 	<key>MinimumOSVersion</key>
 	<string>6.0</string>
 	<key>CFBundleDisplayName</key>
-	<string>MagicEightBall.Mobile</string>
+	<string>Magic 8-Ball</string>
 	<key>CFBundleIdentifier</key>
 	<string>com.yourcompany.MagicEightBall.Mobile</string>
 	<key>CFBundleVersion</key>
