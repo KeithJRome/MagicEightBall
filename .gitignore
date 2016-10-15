@@ -29,6 +29,7 @@ bld/
 [Oo]bj/
 *.ipa
 *.apk
+BundleArtifacts/
 
 # Roslyn cache directories
 *.ide/

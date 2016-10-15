@@ -1,0 +1,1 @@
+C:\Code\MagicEightBall\src\MagicEightBall.Mobile\MagicEightBall.Mobile\MagicEightBall.Mobile.UWP\AppPackages\MagicEightBall.Mobile.UWP_1.1.0.0\MagicEightBall.Mobile.UWP_1.1.0.0_x86_x64_arm.appxbundle

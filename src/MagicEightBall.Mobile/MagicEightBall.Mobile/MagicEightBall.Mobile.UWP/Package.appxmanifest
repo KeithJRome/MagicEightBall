@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
-  <Identity Name="9e3a0080-4834-490b-bcda-ef33193302f2" Publisher="CN=krome" Version="1.0.1.0" />
+  <Identity Name="29291MindfusionCorp.Magic8-Ball" Publisher="CN=F32A4A62-0ADA-4A33-8F79-AABE043B3122" Version="1.1.0.0" />
   <mp:PhoneIdentity PhoneProductId="9e3a0080-4834-490b-bcda-ef33193302f2" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
   <Properties>
-    <DisplayName>MagicEightBall.Mobile.UWP</DisplayName>
-    <PublisherDisplayName>krome</PublisherDisplayName>
+    <DisplayName>Magic 8-Ball</DisplayName>
+    <PublisherDisplayName>Mindfusion Corp</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
   <Dependencies>
